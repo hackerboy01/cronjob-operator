@@ -1,0 +1,16 @@
+domain: hackerboy01
+layout:
+- go.kubebuilder.io/v3
+projectName: cronjob-operator
+repo: cronjob-operator
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: hackerboy01
+  group: batch
+  kind: CronJob
+  path: cronjob-operator/api/v1
+  version: v1
+version: "3"
